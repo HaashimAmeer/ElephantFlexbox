@@ -18,6 +18,12 @@ body {
   margin: 1em 0;
 }
 
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
 h1 {
   color: #312614;
   font-size: 3rem;
@@ -46,8 +52,6 @@ img {
   padding: 1em;
 }
 
-/* $51.75 monthly + $1 add-on */
-
 .b1 {
   width: 20%;
 }
@@ -58,4 +62,13 @@ img {
 
 .b3 {
   width: 70%;
+}
+
+/* Screen size is <= 600px */
+@media (max-width: 600px) {
+  .b1,
+  .b2,
+  .b3 {
+    width: 100%;
+  }
 }
